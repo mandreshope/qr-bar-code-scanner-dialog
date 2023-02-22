@@ -146,17 +146,6 @@ class QrBarCodeScannerDialogWeb extends QrBarCodeScannerDialogPlatform {
               facingMode: "environment"
           }, config, qrCodeSuccessCallback);
           //html5QrCode.start({ facingMode: "user" }, config, qrCodeSuccessCallback);
-
-           //Window event listener
-          /*if (window.chrome.webview != undefined) {
-              window.chrome.webview.addEventListener('message', function(e) {
-                  let data = JSON.parse(JSON.stringify(e.data));
-                  if (data.event === "close") {
-                      html5QrCode.stop();
-                  }
-
-              });
-          }*/
         
         }
         
